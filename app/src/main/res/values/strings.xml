@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="splash_xml_text_second">3秒跳过</string>
+</resources>

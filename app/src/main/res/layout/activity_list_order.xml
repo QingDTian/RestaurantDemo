@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="myapp.res.ui.activity.SplashActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@mipmap/splash">
+        <Button
+            android:id="@+id/order_btn_diancan"
+            android:background="@drawable/btn_diancan"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="点餐"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:background="@mipmap/ic_launcher_round"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/order_tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <myapp.res.ui.view.refresh.SwipeRefreshLayout
+        android:id="@+id/order_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/order_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </myapp.res.ui.view.refresh.SwipeRefreshLayout>
+
+</LinearLayout>

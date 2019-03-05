@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash"
+    android:orientation="vertical"
+    tools:context="myapp.res.ui.activity.SplashActivity">
+
+
+    <Button
+        android:id="@+id/button_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_bg_skip"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="@string/splash_xml_text_second"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/tv_center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="230dp"
+        android:gravity="center"
+        android:text="天华食堂"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_center"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:text="学生点餐系统"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
